@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Щуклан-2026</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #dceefd; 
+            color: #00334e; 
+            margin: 0; 
+            padding: 10px;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 900px; 
+            margin: 0 auto; 
+            background-color: #fff; 
+            padding: 20px; 
+            border: 5px double #00334e; 
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        h1 { color: #e67e22; text-align: center; font-size: 1.8em; margin-bottom: 5px; text-transform: uppercase; }
+        .slogan { text-align: center; font-size: 1.2em; font-weight: bold; color: #00334e; margin-bottom: 20px; font-style: italic; }
+        h2 { color: #e67e22; font-size: 1.4em; border-bottom: 2px solid #e67e22; padding-bottom: 8px; margin-top: 30px; }
+        p { line-height: 1.6; margin-bottom: 15px; }
+
+        .logo { text-align: center; margin-bottom: 15px; font-size: 3em; color: #e67e22; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin: 20px 0; }
+        .gallery img { width: 100%; max-width: 280px; height: auto; border: 3px solid #555; border-radius: 10px; }
+
+        .philosophy-block { background-color: #f0f8ff; padding: 20px; border-left: 8px solid #e67e22; margin-bottom: 20px; }
+        .values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+        .value-item { background-color: #fff8e6; padding: 15px; text-align: center; border: 2px solid #ffd700; border-radius: 10px; display: flex; flex-direction: column; align-items: center; font-size: 0.9em; }
+        .value-item i { font-size: 2.2em; margin-bottom: 8px; }
+        .value-item strong { display: block; margin-bottom: 5px; }
+
+        .innovations-block { background-color: #e6f7ff; padding: 20px; border: 2px solid #00334e; border-radius: 10px; margin-bottom: 20px; font-size: 0.95em; }
+        .principles-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 15px; }
+        .principle-item { background-color: #fff8e6; padding: 15px; text-align: center; border: 2px solid #ffd700; border-radius: 10px; font-size: 0.85em; }
+        .principle-item i { font-size: 2em; margin-bottom: 8px; display: block; }
+
+        .review { background-color: #fff8e6; border: 1px solid #ffd700; border-radius: 10px; margin-bottom: 15px; overflow: hidden; }
+        summary { display: flex; align-items: center; padding: 15px; cursor: pointer; font-weight: bold; color: #00334e; list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+        summary:hover { background-color: #f0f0f0; }
+        .review-avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 3px solid #ffd700; margin-right: 15px; flex-shrink: 0; }
+        .review-text p { margin-top: 10px; padding-top: 10px; border-top: 1px dashed #ccc; font-size: 0.9em; }
+
+        form { background-color: #e6f7ff; padding: 20px; border: 2px solid #00334e; border-radius: 10px; }
+        label { display: block; margin-top: 15px; font-weight: bold; font-size: 0.9em; }
+        input, select, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; background-color: #e67e22; color: white; border: none; padding: 15px; margin-top: 20px; font-size: 1.1em; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #d35400; }
+        #form-success { display: none; color: green; margin-top: 20px; text-align: center; font-size: 1.2em; font-weight: bold; }
+
+        @media (max-width: 600px) and (orientation: portrait) {
+            h1 { font-size: 1.6em; }
+            .slogan { font-size: 1.1em; }
+            .gallery img { max-width: 100%; }
+            .values-grid, .principles-grid { grid-template-columns: 1fr; gap: 10px; }
+            .value-item, .principle-item { padding: 12px; font-size: 0.85em; }
+            .review-avatar { width: 50px; height: 50px; }
+            summary { flex-direction: column; align-items: flex-start; gap: 10px; }
+            .review-text p { font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo"><img src="img/logo.jpeg" alt="Логотип Щуклан" style="max-width: 300px; height: auto;"></div>
+        <h1>Ежегодный турнир «Щуклан-2026»</h1>
+        <p class="slogan">С бакланом на глубину — за самой крупной щукой!</p>
+
+        <div class="gallery">
+            <img src="img/zaliv.jpg" alt="Тарминский залив">
+            <img src="img/zaliv2.jpg" alt="Тарминский залив 2">
+            <img src="img/zaliv3.jpg" alt="Тарминский залив 3">
+            <img src="img/zaliv4.jpg" alt="Тарминский залив 4">
+            <img src="img/zaliv5.jpg" alt="Тарминский залив 5">
+            <img src="img/zaliv6.jpg" alt="Трофейная щука">
+            <img src="img/trophy.jpg" alt="Трофейная щука">
+            <img src="img/trophy2.jpg" alt="Трофейная щука 2">
+            <img src="img/trophy3.jpg" alt="Трофейная щука 3">
+            <img src="img/team.jpg" alt="Экипаж на берегу">
+            <img src="img/team2.jpg" alt="Экипаж на берегу 2">
+            <img src="img/team3.jpg" alt="Экипаж на берегу 3">
+            <img src="img/equipment.jpg" alt="Алюминиевые чушки БрАЗ">
+        </div>
+
+        <div class="philosophy-block">
+            <h2>Философия турнира</h2>
+
+            <p>Традиционная рыбалка с лодки — это компромисс. Человек не создан для ледяной воды Братского моря, а обычная удочка не достанет до логова матерых щук, которые в районе Тарминских щек прижились на серьезных глубинах.</p>
+
+            <p>Так родилась концепция «Экипажного погружения». От 5 до 7 бакланов при помощи специальных титановых хомутов и кевларовых шлеек пристегиваются к атлету, формируя живую упряжку. Птицы, будучи природными ныряльщиками, тянут человека на глубину к Тарминским ямам. Для ускорения спуска к лапам каждой птицы через быстроотцепляемые авиационные карабины пристегиваются балластные грузы — специальные цельнолитые алюминиевые гири.</p>
+
+            <p>Важное примечание от оргкомитета: мы принципиально используем только алюминий, выплавленный на Братском алюминиевом заводе (РУСАЛ). Во-первых, это поддержка местного производителя. Во-вторых, из-за низкой плотности металла для достижения нужного веса птицам приходится таскать на лапах огромные, почти шаровидные чушки. Это замедляет их в воде, давая щуке фору, и делает турнир по-настоящему спортивным. В случае экстренной ситуации атлету достаточно одного резкого рывка за вытяжное кольцо на поясе. Система «Анти-гиря» мгновенно отсекает балласт, и облегченный экипаж пулей устремляется к поверхности.</p>
+
+            <p>Управление осуществляется через систему кожаных поводьев и свистков разной тональности. Чтобы бакланы не всплывали раньше времени с пойманной рыбой, на их шеи надеваются специальные силиконовые кольца, мешающие полностью раскрыть клюв и проглотить добычу.</p>
+
+            <div class="values-grid">
+                <div class="value-item"><i>🦤</i><strong>Без чаек!</strong><span>Чайка — читерство.</span></div>
+                <div class="value-item"><i>🦺</i><strong>Безопасность</strong><span>Проверка карабинов БрАЗ.</span></div>
+                <div class="value-item"><i>🐟</i><strong>Уважение к рыбе</strong><span>Щуку целуем и отпускаем. Мелкую рыбу отдаем бакланам.</span></div>
+                <div class="value-item"><i>💊</i><strong>Никакого допинга</strong><span>Пару капель самогонки баклану — дисквалификация.</span></div>
+            </div>
+        </div>
+
+        <div class="innovations-block">
+            <h2>Тарма-инновации турнира</h2>
+            <p>Чтобы охота в водах Братского моря была эффективной, оргкомитет внедрил ряд технических решений:</p>
+            <ul>
+                <li><strong>Эхолот «Тарма-Щука»:</strong> кустарный прибор из старого глубиномера и будильника «Слава», настроен на поиск коряг.</li>
+                <li><strong>Гидрокостюм «Сибирский панцирь»:</strong> трехслойная телогрейка, пропитанная гусиным жиром, чтобы бакланы не скользили по плечам.</li>
+                <li><strong>Грузовой стандарт «БрАЗ»:</strong> алюминиевые гири от Братского алюминиевого завода. Из-за низкой плотности металла есть шанс выплыть на поверхность.</li>
+            </ul>
+        </div>
+
+        <h2>Наши честные принципы</h2>
+        <div class="principles-grid">
+            <div class="principle-item"><i>🛡️</i><strong>БрАЗ — наш выбор</strong><span><p>Свинец и КрАЗ — позор.</p></span></div>
+            <div class="principle-item"><i>🔓</i><strong>Карабин решает</strong><span><p>Быстроотцепляемый. Для экстренного всплытия.</p></span></div>
+            <div class="principle-item"><i>🧔</i><strong>Голландский штурвал</strong><span><p>Это мужская забава.</p></span></div>
+            <div class="principle-item"><i>🐧</i><strong>Самогон — после всплытия</strong><span><p>Дисквалификация за допинг баклана.</p></span></div>
+        </div>
+
+        <h2>Слово чемпионам и прохожим</h2>
+
+        <details class="review" open>
+            <summary>
+                <img src="img/anton.jpg" alt="Антон В." class="review-avatar">
+                <div><strong>Антон В., пелядник (Тарма)</strong></div>
+            </summary>
+            <div class="review-text"><p>«Раньше я ловил только пелядь прямо у себя под носом, в Тарминской акватории. И знаете, достаточно преуспел в этом занятии. Многие меня знают, уважают. Но, как знаете, мы всегда бросаем себе вызовы. Вот и я, по совету старших товарищей из Шумилово, занялся бакланоловлей. А что им только для себя рыбу ловить?! Нужно использовать их сильные стороны! И представьте, в первый же свой сезон взял золото на "Щуклан-2025"! Я очень рад! Всех приглашаю в нашу семью!!! Спасибо коллегам по бизнесу из Падуна, что выделили мне стартовую тройку бакланов. Это был толчок к поимке других и сбору своего экипажа. Карабины на их алюминиевый гирьках от БрАЗа, кстати, отличные, не клинят на морозе. Птицы, конечно, первые три дня сильно ерепенились из-за объема, но потом привыкли. Сейчас думаю пробовать заходить со стороны Калтукского залива, там бакланы жирнее. Но был в этом году случай: у Викторыча карабин закис, так он с гирей на ноге баклана пешком по дну до самого пляжа в Энергетике шел. Говорит, слышно было, как на том конце дна гирей по камням скребет. Зато теперь у него баклан накачанный, как бычок с Покосного. Ладно, салям по полям!».</p></div>
+        </details>
+
+        <details class="review">
+            <summary>
+                <img src="img/founder.jpg" alt="Дмитрий Юрьевич" class="review-avatar">
+                <div><strong>Дмитрий Юрьевич, основатель (Падун)</strong></div>
+            </summary>
+            <div class="review-text"><p>«Так уж получилось, что я с детства любил щуку. Но взаимности в итоге не получилось... Мать её приготовила, и мы её съели в пост. А по юности попал в плохую компанию, и чтобы не присесть в каком-нибудь Иркутске за какие-нибудь кроссовки, решил завести себе баклана. Тогда я не знал, чем всё это закончится... Бакланов тогда почти не было. Пришлось выписать себе пару штук с "Алиэкспресса" через проводницу поезда "Иркутск — Северобайкальск" Наталью Николавну. Шли они в коробке с надписью "Для баранов", таможня на вокзале не догадалась, а я не понял почему такое название. Яйца, перья, говно... А я в однушке тогда жил. Потом ещё эти бакланы приехали. И понеслось... В итоге на сегодня я обеспечил бакланами всю иркутскую область на годы вперед! Сдаю их в аренду для съёмки клипов на Падунском пороге. Но это бизнес. А что для души??? И вспомнил я свою первую щуку... И решил найти её потомство. И понимаю, что искать их нужно на большой глубине. А кто, как не бакланы, могли меня туда доставить? Вот так я и начал охотиться с бакланами. А потом захотелось передавать свой опыт другим. Вот. Организовал турнир. Был и победителем, и проигравшим. Но самое главное — что это вся моя жизнь, моя философия! Кстати, если кому нужны надёжные хомуты из нержавейки или списанные гири — обращайтесь, у меня в гараже ещё остались».</p></div>
+        </details>
+
+        <details class="review">
+            <summary>
+                <img src="img/shansonie.jpg" alt="Дмитрий Шансонье" class="review-avatar">
+                <div><strong>Дмитрий «Шансонье» Александрович, судья</strong></div>
+            </summary>
+            <div class="review-text"><p>«Многие думают, что баклан.надзор — это просто ходить с палкой и орать на пацанов, чтобы поводья не путали. Это, конечно, тоже. Но вы попробуйте в пять утра на Падунском пляже отличить браконьерского баклана от лицензионного. По взгляду! У меня глаз намётанный. Я, между прочим, сам бронзу в 2024-м брал, пока не перешёл в судейскую коллегию.
+
+Сейчас моя главная задача — честная борьба. Хожу по берегу с рацией, смотрю в бинокль. Кто чайку к лунке подпустил — сразу «красная карточка». Чайка — это читерство и староверье. Пусть эти ретрограды свои турниры организуют, типо «Чайкал». Кто баклану пару капель самогонки для сугрева капнул — дисквалификация, птица неадекватная становится, клюётся и орёт. Кто алюминиевую гирю от БрАЗа спутал с КрАЗовской — штраф и лекция по металлургии, пока разницу в литье по излому не объяснишь. А кто изолентой к ноге примотал вместо карабина — вообще на не допущу до старта.
+
+Но и про спорт не забываю. Выхожу "пострелять" иногда. Судейскую манишку скинул, тулуп накинул — и погнал на своей Оби в поисках рыбацкого счастья. А ещё я на общественных началах учу девушек спиннинг кидать. Стою на берегу, смотрю, как их блесна летит, подсказываю. Техника у них, конечно, специфическая, больше на метание гранаты похожа, но глаза горят — приятно смотреть. Хотя бакланов им не доверяю пока. Эти вертихвостки их только баловать будут, а птица должна быть голодной и злой, как я в пятницу вечером».</p></div>
+        </details>
+
+        <details class="review">
+            <summary>
+                <img src="img/placeholder.jpg" alt="Антон Т." class="review-avatar">
+                <div><strong>Антон Т., прохожий</strong></div>
+            </summary>
+            <div class="review-text"><p>«Мне этот мир абсолютно понятен. Я в своём познании настолько преисполнился, что я как будто бы уже сто триллионов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, и я ищу тут только одного — чучело большого баклана-победителя! А щуку я с собой уже принёс».</p></div>
+        </details>
+
+        <details class="review">
+            <summary>
+                <img src="img/vdv.jpg" alt="Вадим Пельмень" class="review-avatar">
+                <div><strong>Вадим "ВДВ" Пельмень, вахтовик</strong></div>
+            </summary>
+            <div class="review-text"><p>«А я вот пришёл посмотреть на это искусство. Ну нет у нас в Омске бакланов. Ну да, пытаемся на чайках двигаться. Да и глубин у нас на Иртыше таких нет... Но понимаете, баклан это другое! Баклан и чайка... Это как Ламборджини Диабло и Чайка. Совсем другая религия...».</p></div>
+        </details>
+
+        <h2>Регистрация на «Щуклан-2026»</h2>
+        <p>БРАТЧАНЕ, ПАДУНЦЫ И ГОСТИ СЕВЕРА! Хватит чистить пелядь на диване. Заполняй форму, собирай свою упряжку.</p>
+        <form id="shuklan-form">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" placeholder="Иванов" required>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Дмитрий" required>
+            <label for="callsign">Позывной на льду:</label>
+            <input type="text" id="callsign" placeholder="Пелядник" required>
+            <label for="district">Район:</label>
+            <select id="district" required>
+                <option value="">Выберите район...</option>
+                <option value="padun">Падун</option>
+                <option value="tarma">Тарма</option>
+                <option value="energetik">Энергетик</option>
+            </select>
+            <label for="birds">Экипаж бакланов:</label>
+            <input type="number" id="birds" placeholder="0 (аренда)" required>
+            <label for="weights">Гири БрАЗ:</label>
+            <select id="weights" required>
+                <option value="yes">Да, выдайте чушки</option>
+                <option value="no">Своя, с дачи</option>
+            </select>
+            <label for="skills">Особые навыки:</label>
+            <textarea id="skills" placeholder="Владею свистком, не боюсь холодной воды"></textarea>
+            <button type="submit">ЗАПИСАТЬСЯ</button>
+        </form>
+        <div id="form-success" style="display: none; color: green; margin-top: 20px; text-align: center;">
+            <h3>Принято, земеля!</h3>
+            <p>Твоя анкета ушла Дмитрию «Шансонье» Александровичу. Жди звонка с неопределенного номера. Проверь самогон.</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('shuklan-form').addEventListener('submit', function(event){
+            event.preventDefault();
+            document.getElementById('shuklan-form').style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
